@@ -169,6 +169,8 @@ bool DeviceContext::init_renderer() {
     else if (DeviceContext::graphics_API == DeviceContext::GraphicsAPI::DIRECTX) {
 #if defined(ENGINE_PLATFORM_WINDOWS)
         renderer = std::make_unique<Engine::Graphics::D3D12_Renderer>(directX_init_data.window_handle, ec);
+#else
+        ec = std::make_error_code(std::errc::not_supported);
 #endif
     }
     if (ec) {

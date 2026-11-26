@@ -71,6 +71,10 @@ target_link_libraries(Rendering
         Base
 )
 
+if(WIN32)
+    target_link_libraries(Rendering PRIVATE d3d12 dxgi dxguid d3dcompiler)
+endif()
+
 target_link_libraries(Resources
     PUBLIC
         Utility

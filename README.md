@@ -2,7 +2,7 @@
 
 Custom engine written in C++ for simple 2d sandbox game, with mechanics inspired by Terraria.</br>
 Uses CMake for build & Conan for dependencies.</br>
-Uses custom RHI with OpenGL and Vulkan implementations.</br>
+Uses custom RHI with OpenGL, Vulkan and DirectX 12 implementations.</br>
 Uses custom UI widgets & system.</br>
 Has built-in mods system.</br>
 Has tools to pack data into binary files, generate SDF fonts and compile shaders to SPIR-V code.</br>
